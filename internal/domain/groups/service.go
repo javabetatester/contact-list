@@ -27,3 +27,7 @@ func (s *Service) GetById(id int) (Group, error) {
 func (s *Service) GetByName(name string) (Group, error) {
 	return s.Repository.GetByName(name)
 }
+
+func (s *Service) AddContactToGroup(groupID int, contactID int) error {
+	return s.Repository.AddContactToGroup(groupID, contactID)
+}

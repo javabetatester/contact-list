@@ -7,4 +7,5 @@ type Repository interface {
 	Delete(id int) error
 	GetById(id int) (Group, error)
 	GetByName(name string) (Group, error)
+	AddContactToGroup(groupID int, contactID int) error
 }

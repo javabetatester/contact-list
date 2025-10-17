@@ -1,5 +1,6 @@
 package contracts
 
+
 type ContactRequest struct {
 	Name     string `gorm:"not null"`
 	Email    string `gorm:"unique"`
