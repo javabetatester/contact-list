@@ -16,8 +16,8 @@ func (s *Service) Update(group Group) error {
 	return s.Repository.Update(group)
 }
 
-func (s *Service) Delete(group Group) error {
-	return s.Repository.Delete(group)
+func (s *Service) Delete(id int) error {
+	return s.Repository.Delete(id)
 }
 
 func (s *Service) GetById(id int) (Group, error) {

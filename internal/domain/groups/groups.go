@@ -5,7 +5,7 @@ import (
 )
 
 type Group struct {
-	ID int
-	Name string
-	Contacts []contact.Contact
+	ID       int               `gorm:"primaryKey;autoIncrement"`
+	Name     string            `gorm:"not null"`
+	Contacts []contact.Contact `gorm:"many2many:group_contacts;"`
 }

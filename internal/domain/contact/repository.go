@@ -8,5 +8,5 @@ type Repository interface {
 	GetById(id int) (Contact, error)
 	GetByName(name string) (Contact, error)
 	GetByEmail(email string) (Contact, error)
-	GetByTelefone(telefone string) (Contact, error)
+	GetByPhone(telefone string) (Contact, error)
 }

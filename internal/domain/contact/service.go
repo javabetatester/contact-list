@@ -32,6 +32,6 @@ func (s *Service) GetByEmail(email string) (Contact, error) {
 	return s.Repository.GetByEmail(email)
 }
 
-func (s *Service) GetByTelefone(telefone string) (Contact, error) {
-	return s.Repository.GetByTelefone(telefone)
+func (s *Service) GetByPhone(phone string) (Contact, error) {
+	return s.Repository.GetByPhone(phone)
 }
